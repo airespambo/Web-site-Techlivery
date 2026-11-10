@@ -21,8 +21,9 @@ header {
     align-self: center;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 10px #ccc;
-
+    box-shadow: 0 0 10px #474747;
+    background-color: #ffffffb6;
+    backdrop-filter: blur(30px);
 }
 
 header > h1 {
@@ -58,7 +59,7 @@ nav > a {
 }
 
 nav > a:hover {
-    background-color: #cccccc41;
+    background-color: #ffffff91;
 }
 
 .login-btn {
@@ -122,3 +123,38 @@ nav > a:hover {
     transition-duration: 0.3s;
 }
 
+section {
+    width: 100%;
+    height: auto;
+}
+
+#home {
+    background-image: url('/images/home.png');
+    height: 100vh;
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    justify-content: flex-end;
+    align-items: start;
+}
+
+#home > h2 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 5rem;
+    text-shadow: 0 0 10px black;
+}
+
+#home strong {
+    font-size: 5rem;
+}
+
+strong {
+    background: linear-gradient(90deg, #079bff, #a000ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 900;
+}
