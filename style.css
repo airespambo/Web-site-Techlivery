@@ -8,6 +8,7 @@
 body {
     display: flex;
     flex-direction: column;
+    background-color: #010526;
 }
 
 header {
@@ -21,16 +22,16 @@ header {
     align-self: center;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 10px #474747;
-    background-color: #ffffffb6;
-    backdrop-filter: blur(30px);
+    border: 2px solid transparent;
+    background: linear-gradient(90deg, #050510, #050510) padding-box,     
+        linear-gradient(90deg, #079bff, #a000ff);
 }
 
 header > h1 {
     position: absolute;
     left: 2rem;
     font-family: Poppins;
-    background: linear-gradient(90deg, #079bff, #a000ff);
+    background: linear-gradient(90deg, #079bff,#315bff, #a000ff);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -46,7 +47,7 @@ nav {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #fff;
 }
 
 nav > a {
@@ -55,11 +56,10 @@ nav > a {
     justify-content: center;
     width: 6rem;
     text-decoration: none;
-    color: black;
 }
 
 nav > a:hover {
-    background-color: #ffffff91;
+    background-color: #ffffff33;
 }
 
 .login-btn {
@@ -84,6 +84,7 @@ nav > a:hover {
 
 .invisible {
     display: none;
+    color: black;
 }
 
 .login-btn:hover {
@@ -151,10 +152,50 @@ section {
     font-size: 5rem;
 }
 
-strong {
+strong, h3 {
     background: linear-gradient(90deg, #079bff, #a000ff);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     font-weight: 900;
+}
+
+h3 {
+    font-size: 4rem;
+}
+
+#about-us {
+    display: flex;
+    padding: 3rem;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.content img {
+    width: 6rem;
+    border-radius: 1rem;
+}
+
+.card {
+    width: 35rem;
+    height: 30rem;
+    border: 1px solid red;
+    border-radius: 1rem;
+}
+
+.features {
+    border: 1px solid red;
+    width: 35rem;
+}
+
+.features h3 {
+    font-size: 2rem;
 }
