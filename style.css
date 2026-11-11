@@ -13,6 +13,9 @@ body {
 }
 
 header {
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px black;
+    background-color: #0105263b;
     display: flex;
     flex-direction: row;
     width: 80%;
@@ -23,9 +26,6 @@ header {
     align-self: center;
     align-items: center;
     justify-content: center;
-    border: 2px solid transparent;
-    background: linear-gradient(90deg, #050510, #050510) padding-box,     
-        linear-gradient(90deg, #079bff, #d400ff);
     z-index: 1000;
 }
 
@@ -67,7 +67,6 @@ nav > a:hover {
 .login-btn {
     position: absolute;
     right: .5rem;
-    color: black;
     width: 3rem;
     height: 3rem;
     background: linear-gradient(90deg, #079bff, #315bff, #d400ff);
@@ -134,7 +133,8 @@ section {
 #home {
     background-image: url('/images/home.png');
     height: 100vh;
-    background-position: right;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -163,39 +163,42 @@ strong {
 }
 
 h3 {
-    font-size: 4rem;
+    font-size: 5rem;
+    font-weight: 400;
 }
 
 #about-us {
     display: flex;
-    padding: 3rem;
     flex-direction: column;
     gap: 3rem;
     align-items: center;
 }
 
-.about-text-img {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.section-text {
+    margin-top: 3rem;
     width: 100%;
-}
-
-.about-text-img > div {
     display: flex;
-    gap: 1rem;
     flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
 }
 
-.about-text-img span {
-    height: 25rem;
-    width: 30rem;
+#about-us .section-text {
+    background-image: url("/images/back3.jpg");
+}
+
+.section-text p {
     font-size: 1.2rem;
-    display: flex;
 }
 
-.about-text-img > .card > img {
-    width: inherit;
+.section-text h3 {
+    line-height: 5rem;
 }
 
 .about-text-img .card {
@@ -205,10 +208,9 @@ h3 {
 }
 
 .card {
+    background-color: #cccccc1f;
     border-radius: 2rem;
-    border: 2px solid transparent;
-    background: linear-gradient(90deg, #050510, #050510) padding-box,     
-        linear-gradient(90deg, #079bff, #d400ff);
+    border: 1px solid transparent;
     width: 20rem;
     height: 15rem;
     display: flex;
@@ -240,8 +242,83 @@ h3 {
     gap: 2rem;
 }
 
-.card:hover {
-    transform: scale(1.09);
-    box-shadow: 0 0 10px #d400ff;
+.card:hover, .card-s:hover, .card-x:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #cccccc94;
+    transition-duration: 0.3s;
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+#services .section-text {
+    background-image: url("/images/back2.jpg");
+}
+
+.grid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card-s, .card-x {
+    background-color: #cccccc1f;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    width: 32rem;
+    border-radius: 2rem;
+    align-items: center;
+    transition-duration: 0.3s;
+}
+.card-x {
+    margin-top: 3rem;
+    width: 66rem;
+    justify-content: space-between;
+}
+
+.card-s img, .card-x img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+}
+
+.card-s h4, .card-x h4 {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-x button {
+    cursor: pointer;
+    background: linear-gradient(90deg, #079bff, #315bff, #d400ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.1rem;
+    transition-duration: 0.3s;
+}
+
+.card-x button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #cccccc94;
     transition-duration: 0.3s;
 }
