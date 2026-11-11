@@ -131,7 +131,7 @@ section {
 }
 
 #home {
-    background-image: url('/images/home.png');
+    background-image: url('/assets/images/home.png');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -190,7 +190,7 @@ h3 {
 }
 
 #about-us .section-text {
-    background-image: url("/images/back3.jpg");
+    background-image: url("/assets/images/back3.jpg");
 }
 
 .section-text p {
@@ -216,7 +216,7 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: .5rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
     align-items: center;
     transition-duration: 0.3s;
 }
@@ -257,7 +257,7 @@ h3 {
 }
 
 #services .section-text {
-    background-image: url("/images/back2.jpg");
+    background-image: url("/assets/images/back2.jpg");
 }
 
 .grid {
@@ -321,4 +321,31 @@ h3 {
     transform: scale(1.05);
     box-shadow: 0 0 8px #cccccc94;
     transition-duration: 0.3s;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+    background-color: #07127991;
+    padding: 2rem;
+}
+
+h5 {
+    font-weight: 900;
+    color: #079bff;
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.corp {
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
 }
