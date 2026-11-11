@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/home.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+form {
+    width: 30rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(30px);
+    border-radius: 2rem;
+    padding: 1.5rem;
+    box-shadow: 0 0 20px black;
+    gap: .5rem;
+}
+
+input {
+    background: inherit;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 1em 2em;
+    transition-duration: 0.5s;
+}
+
+input:focus {
+    border-radius: 2rem;
+    transition-duration: 0.5s;
+}
+
+button {
+    cursor: pointer;
+    background: linear-gradient(90deg, #079bff, #315bff, #d400ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.1rem;
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #cccccc94;
+    transition-duration: 0.3s;
+}
+
+a {
+    align-self: center;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+a:hover {
+    border-bottom: 2px solid #079bff;
+    transition-duration: 0.3s;
+}
