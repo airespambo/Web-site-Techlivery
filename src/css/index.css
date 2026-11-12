@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     background-color: #010526;
 }
-
+    
 header {
     backdrop-filter: blur(30px);
     box-shadow: 0 0 10px black;
